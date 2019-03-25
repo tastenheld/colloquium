@@ -172,19 +172,7 @@ toggle the CSS style:</p>
 <script type="text/javascript" src="lib/markdown-it.js"></script>
 
 <script type="text/javascript">
-    
-// Activate/deactivate rules, with curring
-var md = require('markdown-it')()
-            .disable([ 'link', 'image' ])
-            .enable([ 'link' ])
-            .enable('image');
 
-// Enable everything
-md = require('markdown-it')('full', {
-  html: true,
-  linkify: true,
-  typographer: true,
-});
 var markdown = $("#markdown").html();
 var html = md.render(markdown);
 $("#output").html(html);
