@@ -115,24 +115,6 @@ are converted to HTML first, then colored by Highlight.js:
 </div>
 
 <script type="text/javascript">
-    
-// Activate/deactivate rules, with curring
-var md = require('markdown-it')()
-            .disable([ 'link', 'image' ])
-            .enable([ 'link' ])
-            .enable('image');
-
-// Enable everything
-md = require('markdown-it')('full', {
-  html: true,
-  linkify: true,
-  typographer: true,
-});
-    
-var markdown = $("#markdown").html();
-var html = md.render(markdown);
-$("#output").html(html);
-    
 var enableBwCss = function(){
     disableDevopsCss();
     disableEffectsCss();
@@ -189,6 +171,25 @@ toggle the CSS style:</p>
 <script type="text/javascript" src="lib/mermaid/mermaid.min.js"></script>
 <script type="text/javascript" src="lib/markdown-it.js"></script>
 
+<script type="text/javascript">
+    
+// Activate/deactivate rules, with curring
+var md = require('markdown-it')()
+            .disable([ 'link', 'image' ])
+            .enable([ 'link' ])
+            .enable('image');
+
+// Enable everything
+md = require('markdown-it')('full', {
+  html: true,
+  linkify: true,
+  typographer: true,
+});
+var markdown = $("#markdown").html();
+var html = md.render(markdown);
+$("#output").html(html);
+</script>
+    
 <!--
     To make all described above really work, you need to include impress.js in the page.
     You also need to call a `impress().init()` function to initialize impress.js presentation.
