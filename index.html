@@ -169,11 +169,9 @@ toggle the CSS style:</p>
      See also src/plugins/extras/extras.js -->
 <script type="text/javascript" src="lib/highlight/highlight.pack.js"></script>
 <script type="text/javascript" src="lib/mermaid/mermaid.min.js"></script>
-<script type="text/javascript" src="lib/markdown-it.js"></script>
-
-<script type="text/javascript">
-
+<script type="text/javascript" src="lib/markdown-it.js">
 var markdown = document.getElementById("markdown");
+var md = require('markdown-it')();
 md.render(markdown);
 </script>
     
