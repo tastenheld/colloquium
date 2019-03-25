@@ -129,6 +129,10 @@ md = require('markdown-it')('full', {
   typographer: true,
 });
     
+var markdown = $("#markdown").html();
+var html = md.render(markdown);
+$("#output").html(html);
+    
 var enableBwCss = function(){
     disableDevopsCss();
     disableEffectsCss();
