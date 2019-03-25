@@ -103,61 +103,6 @@ are converted to HTML first, then colored by Highlight.js:
   Markdown inside each div.
 </div>
 
-<div id="title-slide" class="step slide title markdown" data-x="2000" data-y="5000">
-# Title slide
-## This slide has different CSS class than the previous ones
-</div>
-
-
-<div id="tilted-slide" class="step slide markdown" data-rotate="-85" data-x="2000" data-y="2000" data-z="1000" data-scale="4">
-# Simplicity of Markdown & Full power of Impress.js
-  
-* This slide sets its own `rotate`, `x`, `y`, and even `z` coordinates
-* Note that the Mother Teresa slide earlier was pimped with some custom CSS, all the while
-  the content was written in simple Markdown.
-</div>
-
-<script type="text/javascript">
-var enableBwCss = function(){
-    disableDevopsCss();
-    disableEffectsCss();
-};
-
-var enableDevopsCss = function(){
-    document.body.classList.add("devopsy");
-    disableEffectsCss();
-};
-
-var disableDevopsCss = function(){
-    document.body.classList.remove("devopsy");
-};
-
-var enableEffectsCss = function(){
-    document.body.classList.add("effects");
-    disableDevopsCss();
-};
-
-var disableEffectsCss = function(){
-    document.body.classList.remove("effects");
-};
-</script>
-
-
-<div id="js-slide" class="step slide" data-rotate="0" data-x="4000" data-y="5000">
-<h1>CSS &amp; JavaScript magic</h1>
-
-<p>Just to emphasize my point, this last slide allows you to use a JavaScript powered menu to
-toggle the CSS style:</p>
-
-<p><a href="#" onclick="enableBwCss();" class="css-menu-bw">Black &amp; white</a>, 
-<a href="#" onclick="enableDevopsCss();" class="css-menu-devopsy">Devopsy</a>, 
-<a href="#" onclick="enableEffectsCss();" class="css-menu-effects">Effects overload</a></p>
-
-<p>Simplicity of Markdown married with full power of Impress.js!</p>
-
-</div>
-
-
 <div id="overview" class="step" data-x="5000" data-y="4000" data-scale="10" style="pointer-events: none;" data-rotate="5">
 </div>
 
