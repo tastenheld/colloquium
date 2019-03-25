@@ -170,9 +170,10 @@ toggle the CSS style:</p>
 <script type="text/javascript" src="lib/highlight/highlight.pack.js"></script>
 <script type="text/javascript" src="lib/mermaid/mermaid.min.js"></script>
 <script type="text/javascript" src="lib/markdown-it.js">
-var markdownContent = document.getElementById("markdown");
-var markdown = require('markdown-it')();
-markdown.render(markdownContent);
+//var markdownContent = document.getElementById("markdown");
+//var markdown = require('markdown-it')();
+//markdown.render(markdownContent);
+var window.markdown = window.markdownit();
 </script>
     
 <!--
