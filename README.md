@@ -1,0 +1,2 @@
+# colloquium
+Kolloquium der Bachelorarbeit
