@@ -16,15 +16,15 @@ html(lang="de")
       
     #impress(data-transition-duration="1000")
     
-      .step(id="intro", class="slide", data-rel-x="0", data-rel-y="1000")
-        center
+      .step(id="title", class="slide", data-rel-x="0", data-rel-y="1000")
+        center(style="padding: 1.5em;")
           img(src="images/hs-merseburg.png", class="img-fluid", width="20%" alt="Logo der Hochschule Merseburg")
           br
           small(style="font-size: 0.7em;") Hochschule Merseburg
           hr
           small
-            strong Kolloquium zur Bachelorthesis
-          h2 Prototypische Umsetzung einer webbasierten Musik-Notationssoftware mit dem Angular-Framework
+            strong(style="padding: 1.5em;") Kolloquium zur Bachelorthesis
+          h2 Prototypische Umsetzung einer webbasierten Musik&#8209;Notationssoftware mit dem Angular&#8209;Framework
           br
           table(class="table")
             tbody
@@ -41,15 +41,20 @@ html(lang="de")
         
       .step(id="toc", class="slide", data-rel-x="0", data-rel-y="740")
         center
-          h2 Inhaltsverzeichnis
+          h2 Prototypische Umsetzung einer webbasierten Musik&#8209;Notationssoftware mit dem Angular&#8209;Framework
           hr
+          br
           ol(type="1")
             li Einleitung
             li Grundlagen
             li Implementierung
             li Zusammenfassung
             
-      .step(id="overview", class="slide", data-rel-x="0", data-rel-y="-370", data-rel-z="1200")
+      .step(id="intro", class="slide", data-rel-x="0", data-rel-y="740")
+        center
+          h2 Einleitung
+        
+      .step(id="overview", class="slide", data-rel-x="0", data-rel-y="-740", data-rel-z="1200")
 
       
     #impress-toolbar
