@@ -34,6 +34,7 @@ ol, ul {
   margin: 0;
   margin-left: 4em;
   padding: 0;
+  float: none;
   /*
     list-style: none;
     */
@@ -720,6 +721,7 @@ body.impress-mouse-timeout {
 width: 55% !important;
 font-size:0.7em !important;
 border-top: none !important;
+margin: 0px auto; float: none;
 }
 
 .row {

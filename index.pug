@@ -17,56 +17,24 @@ html(lang="de")
     #impress(data-transition-duration="1000")
     
       .step(id="title", class="slide", data-rel-x="0", data-rel-y="1000")
-        .row(class="mt-4 mb-2")
-          .col
-            img(src="images/hs-merseburg.png", width="20%" alt="Logo der Hochschule Merseburg")
-        .row
-          .col(style="font-size: 0.7em;") Hochschule Merseburg
-        .row(class="border-bottom pb-4")
-          .col(style="font-size: 0.6em;") Studiengang Angewandte Informatik B.Sc.
-        .row(class="mt-2 mb-2")
-          .col(class="font-weight-bold", style="font-size: 0.8em;") Kolloquium zur Bachelorthesis
-        .row(class="border-bottom pb-3 mb-3")
-          .col
-            h2 Prototypische Umsetzung einer webbasierten Musik&#8209;Notationssoftware mit dem Angular&#8209;Framework
-        .row
-          .col
-            table(class="table", style="font-size: 0.4em; margin: 0px auto; float: none;")
-              tbody
-                tr
-                  td Autor: 
-                  td Ralf Tippelt
-                tr
-                  td 1. Betreuer:
-                  td Prof. Dr. rer. pol. Uwe Schröter
-                tr
-                  td 2. Betreuer:
-                  td Dipl.-Ing. Ulrich Borchert
-            
+        include slides/01-title.html    
         
       .step(id="toc", class="slide", data-rel-x="0", data-rel-y="740")
-        center
-          h2 Prototypische Umsetzung einer webbasierten Musik&#8209;Notationssoftware mit dem Angular&#8209;Framework
-          hr
-          br
-          ol(type="1")
-            li Einleitung
-            li Grundlagen
-            li Implementierung
-            li Zusammenfassung
+        include slides/02-toc.html
             
       .step(id="intro", class="slide", data-rel-x="0", data-rel-y="740")
         center
           h2 Einleitung
         
       .step(id="overview", class="slide", data-rel-x="0", data-rel-y="-740", data-rel-z="1200")
-
       
     #impress-toolbar
     #impress-help
     .impress-progressbar
       div
     .impress-progress
+    script(type="text/javascript", src="lib/jquery.slim.min.js")
+    script(type="text/javascript", src="lib/popper.min.js")
     script(type="text/javascript", src="lib/bootstrap.bundle.min.js")
     script(type="text/javascript", src="lib/highlight/highlight.pack.js")
     script(type="text/javascript" src="lib/impress.js")
