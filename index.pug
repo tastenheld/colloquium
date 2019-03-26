@@ -1,0 +1,66 @@
+//output: index.html, pretty: true
+doctype html
+html(lang="de")
+  head
+    meta(name="viewport", content="width=1024")
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    title Kolloquium Bachelorthesis
+    link(href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic", rel="stylesheet")
+    link(href="css/impress-demo.css", rel="stylesheet")
+    //link(href="css/bootstrap.min.css", rel="stylesheet")
+    link(href="css/devopsy.css", rel="stylesheet")
+    link(rel="stylesheet", href="lib/highlight/styles/vs.css")
+      
+  body(class="impress-not-supported")
+    div(class="fallback-message")
+      p Dieser Browser wird nicht von <i>impress.js</i> unterstützt.
+      
+    #impress(data-transition-duration="1000")
+    
+      .step(id="intro", class="slide", data-rel-x="0", data-rel-y="1000")
+        center
+          img(src="images/hs-merseburg.png", class="img-fluid", width="20%" alt="Logo der Hochschule Merseburg")
+          br
+          small(style="font-size: 0.7em;") Hochschule Merseburg
+          hr
+          small
+            strong Kolloquium zur Bachelorthesis
+          h2 Prototypische Umsetzung einer webbasierten Musik-Notationssoftware mit dem Angular-Framework
+          br
+          table(class="table")
+            tbody
+              tr
+                td Autor: 
+                td Ralf Tippelt
+                tr
+                  td 1. Betreuer:
+                  td Prof. Dr. rer. pol. Uwe Schröter
+                tr
+                  td 2. Betreuer:
+                  td Dipl.-Ing. Ulrich Borchert
+            
+        
+      .step(id="toc", class="slide", data-rel-x="0", data-rel-y="740")
+        center
+          h2 Inhaltsverzeichnis
+          hr
+          ol(type="1")
+            li Einleitung
+            li Grundlagen
+            li Implementierung
+            li Zusammenfassung
+            
+      .step(id="overview", class="slide", data-rel-x="0", data-rel-y="-370", data-rel-z="1200")
+
+      
+    #impress-toolbar
+    #impress-help
+    .impress-progressbar
+      div
+    .impress-progress
+    //script(type="text/javascript", src="lib/bootstrap.bundle.min.js")
+    script(type="text/javascript", src="lib/highlight/highlight.pack.js")
+    script(type="text/javascript" src="lib/impress.js")
+    script.
+      impress().init();
+  
