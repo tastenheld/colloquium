@@ -207,6 +207,7 @@ a:focus {
     font-size: 30px;
     line-height: 36px;
     letter-spacing: -1px;
+    text-align: center;
 }
 
 .slide q {
@@ -717,7 +718,13 @@ body.impress-mouse-timeout {
 
 .table {
 width: 55% !important;
-font-size:0.7em !important
+font-size:0.7em !important;
+border-top: none !important;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
 .impress-progressbar {
