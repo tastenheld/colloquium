@@ -751,3 +751,23 @@ margin: 0px auto; float: none;
   text-align: left;
   opacity: 0.6;
 }
+.step .notes {
+  display: none;
+}
+.substep { opacity: 0; }
+.substep.substep-visible { opacity: 1; transition: opacity 1s; }
+
+.impress-enabled .step {
+   /* original styles */
+}
+
+/* This should stay always below the generic rule for all steps */
+.impress-enabled .my-custom-step {
+   transition: opacity .5s;
+}
+
+.impress-enabled .step.active { opacity: 1; }
+
+.figure-caption {
+  font-size: 0.6em !important;
+}
