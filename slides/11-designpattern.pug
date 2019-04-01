@@ -1,0 +1,37 @@
+//output: 11-designpattern.html, pretty: true
+.row(class="border-bottom pb-3 mb-3")
+  .col
+    h3 2.3 Design Pattern
+.row(class="mt-2")
+  .col
+    ul(style="margin-left: 9em;")
+      li UI-Komponenten
+      li Dependency Injection
+      li Singleton
+      li Decorator
+
+.substep
+  .row(class="mt-1")
+    .col
+      figure(class="figure")
+        img(src="images/komponentenbaum.png" class="img-fluid" width="100%")
+        figcaption(class="figure-caption") Komponentenbaum
+
+.notes
+  dl
+    dt Wasserfallmodell
+    dd viele Änderungen pro Zyklus
+    dt agile Softwareent.
+    dd zuerst rudimentäres Programm, dann kleine Anzahl neuer Funktionen
+    
+  p wiederkehrende Probleme, objektorientierte Programmiersprachen reichen nicht zur Bewältigung
+  
+  dl
+    dt UI-Komponenten
+    dd MVC wird umgesetzt, Komposition und Kapselung (Angular)
+    dt Dependency Injection
+    dd Unkehrung der Verantwortung (Inversion of Control)
+      ul
+        li Service Locator (Registry)
+        li Dependency Injection (Constructor, Interface, Setter)
+  

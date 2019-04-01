@@ -1,0 +1,44 @@
+//output: 12-singleton.html, pretty: true
+.row(class="border-bottom pb-3 mb-3")
+  .col
+    h4 2.3.1 Singleton
+.row(class="mt-2")
+  .col
+    pre
+      code(class="js", style="text-align: left; font-size: 0.8em;")
+        | export class Singleton {
+        |   private constructor() {  }
+        | 
+        |   public static getInstance(): Singleton {
+        |     if (SoundGenerator.INSTANCE == null) {
+        |       Singleton.INSTANCE = new Singleton();
+        |     }
+        |     return Singleton.INSTANCE;
+        |   }
+        | }
+  
+.row(class="mt-2")
+  .col-4
+    .substep
+      p Early Instantiation
+  .col-4
+    .substep
+      p Angular Service
+  .col-4
+     .substep
+      p Lazy Instantiation
+.substep
+  .row(class="mt-2")
+    .col-4
+      p 78ms
+    .col-4
+      p 79ms
+    .col-4
+      p 81ms
+      
+
+          
+.notes
+  p private Konstruktoren in transpilierter Form nicht mehr vorhanden
+  p Early Instantiation (click) : bei parallen Prozessen, Arbeitsspeicher!
+  p Angular-Service - Klasse wird dekoriert

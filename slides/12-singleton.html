@@ -1,0 +1,55 @@
+
+<div class="row border-bottom pb-3 mb-3">
+  <div class="col">
+    <h4>2.3.1 Singleton</h4>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col">
+    <pre><code style="text-align: left; font-size: 0.8em;" class="js">export class Singleton {
+  private constructor() {  }
+ 
+  public static getInstance(): Singleton {
+    if (SoundGenerator.INSTANCE == null) {
+      Singleton.INSTANCE = new Singleton();
+    }
+    return Singleton.INSTANCE;
+  }
+}</code></pre>
+  </div>
+</div>
+<div class="row mt-2">
+  <div class="col-4">
+    <div class="substep">
+      <p>Early Instantiation</p>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="substep">
+      <p>Angular Service</p>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="substep">
+      <p>Lazy Instantiation</p>
+    </div>
+  </div>
+</div>
+<div class="substep">
+  <div class="row mt-2">
+    <div class="col-4">
+      <p>78ms</p>
+    </div>
+    <div class="col-4">
+      <p>79ms</p>
+    </div>
+    <div class="col-4">
+      <p>81ms</p>
+    </div>
+  </div>
+</div>
+<div class="notes">
+  <p>private Konstruktoren in transpilierter Form nicht mehr vorhanden</p>
+  <p>Early Instantiation (click) : bei parallen Prozessen, Arbeitsspeicher!</p>
+  <p>Angular-Service - Klasse wird dekoriert</p>
+</div>

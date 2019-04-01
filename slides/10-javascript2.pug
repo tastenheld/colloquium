@@ -1,0 +1,24 @@
+//output: 10-javascript2.html, pretty: true
+.row(class="border-bottom pb-3 mb-3")
+  .col
+    h4 2.2.1 JavaScript
+.row(class="mt-5")
+  .col
+    p Schlüsselwort <i>var</i>
+    pre
+      code(class="js", style="text-align: left")
+        | for (var i = 0; i < 4; i++) {
+        | //...
+        | }
+        | console.log( i ); // 9
+        
+.row(class="mt-5")
+  .col
+    p Schlüsselwort <i>let</i>
+    pre
+      code(class="js", style="text-align: left")
+        | for (let i = 0; i < 4; i++) {
+        | //...
+        | }
+        | // i = undefined
+                

@@ -18,6 +18,8 @@ html(lang="de")
     
       .step(id="title", class="slide", data-rel-x="0", data-rel-y="1000")
         include slides/01-title.html    
+      
+      // Einleitung
         
       .step(id="toc", class="slide", data-rel-x="0", data-rel-y="740")
         include slides/02-toc.html
@@ -34,7 +36,70 @@ html(lang="de")
       .step(id="target", class="slide", data-rel-x="-700", data-rel-y="1200", data-rel-z="-900")
         include slides/06-target.html
         
-      .step(id="overview", class="slide", data-rel-x="0", data-rel-y="-740", data-rel-z="-2000")
+      .step(data-rel-x="700", data-rel-y="-780", data-rel-z="8000")
+
+      // Technik-Teil
+      
+      .step(id="technik", class="slide", data-rel-x="2200", data-rel-y="-780", data-rel-z="-8000")
+        include slides/07-technik.html
+        
+      .step(id="html", class="slide", data-rel-x="-600", data-rel-y="550", data-rel-z="1500")
+        include slides/08-html.html
+      
+      .step(id="javascript", class="slide", data-rel-x="1300", data-rel-y="0", data-rel-z="0")
+        include slides/09-javascript.html
+        
+      .step(id="javascript2", class="slide", data-rel-x="0", data-rel-y="550", data-rel-z="1500")
+        include slides/10-javascript2.html
+        
+      .step(id="designpattern", class="slide", data-rel-x="1300", data-rel-y="-550", data-rel-z="-1500")
+        include slides/11-designpattern.html
+        
+      .step(id="singleton", class="slide", data-rel-x="0", data-rel-y="550", data-rel-z="1500")
+        include slides/12-singleton.html
+        
+      .step(id="decorator", class="slide", data-rel-x="1300", data-rel-y="0", data-rel-z="0")
+        include slides/13-decorator.html
+      
+      // Implementierung  
+      .step(id="implementation", class="slide", data-rel-x="2000", data-rel-y="-1800", data-rel-z="-3000")
+        .row(class="border-bottom pb-3 mb-3")
+          .col
+            h2 3. Implementierungsdetails
+        .substep
+          .row(class="mt-4")
+            .col Angular CLI
+        .substep
+          .row(class="mt-4")
+            .col Angular Components
+              ul
+                li Virtuelle Tastatur
+                li Virtuelles Notenblatt
+      
+      // Zusammenfassung
+      .step(id="fazit", class="slide", data-rel-x="1200", data-rel-y="0", data-rel-z="0")
+        .row(class="border-bottom pb-3 mb-3")
+          .col
+            h2 4. Fazit
+        .substep
+          .row(class="mt-5")
+            .col Lernerfolge bei kleinen Schülergruppen
+        .substep
+          .row(class="mt-5")
+            .col 
+              p Konkurenzprodukte
+              p Noteflight
+              p Scorio
+                  
+      .step(id="Aublick", class="slide", data-rel-x="1200", data-rel-y="0", data-rel-z="0")
+        .row(class="border-bottom pb-3 mb-3")
+          .col
+            h3 4.1 Ausblick
+            p Noten abspielen und speichern
+            p Navigation
+            p Multimediaanwendung
+                
+      .step(id="overview", class="slide", data-rel-x="0", data-rel-y="370", data-rel-z="12000")
       
     #impress-toolbar
     #impress-help
